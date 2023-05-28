@@ -1,0 +1,502 @@
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #3C368C;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+.logo-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo-icon i {
+    margin-left: 20px;
+}
+
+.headerbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerbuttons i {
+    cursor: pointer;
+}
+
+.headerbuttons i.fa-bars {
+    display: none;
+    cursor: none;
+}
+
+/* NAV MENU */
+
+nav {
+    margin-left: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a4a3a3;
+    font-weight: bold;
+    transition: color 1s;
+    letter-spacing: 2px;
+
+}
+
+nav ul li a:hover {
+    color: #0075be;
+}
+
+/* BANNER */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bannerBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#computerImg {
+    position: absolute;
+    bottom: -40px;
+    right: 40px;
+}
+
+.bannerTexts {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-left: 40px;
+}
+
+#bP1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#bP2 {
+    color: #ccc;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#bP3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.bannerButton {
+    font-weight: bold;
+    background-color: #f16248;
+    color: #f5f5f5;
+    height: 40px;
+    width: 140px;
+    border: 0px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.bannerButton:hover {
+    background-color: #c8c8c8;
+    color: #252525;
+    cursor: pointer;
+}
+
+/* MISSAO */
+
+.mission {
+    margin-top: 80px;
+}
+
+.missionBox {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.missionImage {
+    padding-right: 40px;
+}
+
+#missionSubtitle {
+    color: #252525;
+    font-weight: bold;
+}
+
+.missionText p {
+    color: #7d7d7d;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto;
+}
+
+#missionLink {
+    color: #0075be;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#missionLink:hover {
+    color: #0075be;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* EQUIPA */
+
+.team {
+    margin-bottom: 50px;
+}
+
+.teamBox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.teamFrame {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.teamText {
+    width: 100%;
+    background-color: #0000006c;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.teamFrame:hover .teamText {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.teamFrame img {
+    border-radius: 50%;
+    transition: border-radius 0.5s ease;
+}
+
+.teamFrame:hover img {
+    border-radius: 0%;
+    transition: border-radius 0.5s ease;
+}
+
+.teamText h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.teamText p {
+    margin-top: 0;
+}
+
+/* OFERTA FORMATIVA */
+
+.trainingoffer {
+    margin-bottom: 50px;
+}
+
+.trainingMedia {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#trainingBackground {
+    width: 100%;
+}
+
+.trainingTexts {
+    position: absolute;
+}
+
+#tP1,
+#tP2 {
+    margin: 0;
+}
+
+#tP2,
+#tP3 {
+    color: #153c85;
+}
+
+#tP1 {
+    font-size: 42px;
+    color: #f27d29;
+    font-weight: bold;
+}
+
+#tP2 {
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+#tP3 {
+    font-size: 26px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.footerDiv {
+    flex-basis: 16.666667%;
+}
+
+footer h4 {
+    color: #252525;
+    font-weight: bold;
+}
+
+footer a {
+    color: #7d7d7d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* LINHAS */
+
+.line {
+    height: 2px;
+    background-color: #7d7d7d;
+}
+
+/* CONTACTO */
+
+#contact {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background-color: #252525;
+    height: 50px;
+    width: 50px;
+    transition: width 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#contact:hover {
+    width: 150px;
+}
+
+#contact img {
+    height: 21px;
+    width: 15px;
+    padding: 20px
+}
+
+#contact p {
+    display: inline-block;
+    overflow: hidden;
+    color: #0acb84;
+    font-weight: bold;
+}
+
+/* ARROW */
+
+#arrow {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+}
+
+/* Devices under 800px */
+@media screen and (max-width: 800px) {
+
+    footer {
+        justify-content: start;
+    }
+
+    .footerDiv {
+        flex-basis: 50%;
+    }
+
+    header {
+        height: 100%;
+        padding-bottom: 10px;
+    }
+
+    .headerbuttons i.fa-bars {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .bannerTexts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: 100%
+    }
+
+    #computerImg {
+        display: none;
+    }
+
+    .banner {
+        position: relative;
+        height: 320px;
+    }
+
+    #bP1 {
+        font-size: 40px;
+    }
+
+    #bP2 {
+        font-size: 24px;
+    }
+
+    .missionBox {
+        flex-wrap: wrap;
+    }
+
+    .missionImage {
+        padding-right: 0;
+    }
+
+    .missionText {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .missionText p {
+        margin-right: 20px;
+    }
+
+    .line {
+        height: 2px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .teamBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teamFrame {
+        display: flex;
+        justify-content: center;
+    }
+
+    #missionLink {
+        font-size: 1rem;
+    }
+}
+
+/* Devices under 600px */
+@media screen and (max-width: 600px) {
+    #arrow {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .trainingTexts {
+        left: 3%;
+    }
+
+    #tP1 {
+        font-size: 30px;
+    }
+
+    #tP2 {
+        font-size: 25px;
+    }
+
+    #tP3 {
+        font-size: 20px;
+    }
+}
